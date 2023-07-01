@@ -1,0 +1,3 @@
+C:/Users/ConBl/Desktop/ShowClock/build/CMakeFiles/ShowClock.dir
+C:/Users/ConBl/Desktop/ShowClock/build/CMakeFiles/edit_cache.dir
+C:/Users/ConBl/Desktop/ShowClock/build/CMakeFiles/rebuild_cache.dir

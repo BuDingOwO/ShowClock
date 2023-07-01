@@ -25,8 +25,13 @@
 
 ## Note
 
-Nop...
+编译工具: CMAKE
+IDE: VSC
+需要自己准备 MinGW, Ninja, CMAKE
 
-[ ] 关闭按钮  
-[ ] 托盘区  
-[ ] 图标  
+## Bugs 
+
+1. Exit Button
+2. Draw Position Not Center
+3. Using Easyx.h Graphics.h
+

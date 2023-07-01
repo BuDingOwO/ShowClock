@@ -1,7 +1,7 @@
 //
 // Created by ConBl on 2023/2/25.
 //
-#include <graphics.h>
+#include "include/graphics.h"
 #include <ctime>
 #include <string>
 
@@ -27,12 +27,16 @@ basic_string<char> getTime () {
 
     //sprintf(Time, "%d/%d/%d %d:%d:%d" , 1900 + ltm->tm_year, 1 + ltm->tm_mon, ltm->tm_mday, ltm->tm_hour, ltm->tm_min, ltm->tm_sec);
 
-    sprintf(Time, "%d:%d:%d" , ltm->tm_hour, ltm->tm_min, ltm->tm_sec);
+    sprintf(Time, "%2d:%2d:%2d" , ltm->tm_hour, ltm->tm_min, ltm->tm_sec);
     //printf("getTime: %s\n", Time);
 
     strTime = Time;
 
     return strTime;
+}
+
+int SetWindowAlpha(){
+    return 0;
 }
 
 int main()
@@ -51,8 +55,9 @@ int main()
     WindHeight = ScreenHeight / 12;
 
     initgraph(WindWidth, WindHeight, 0);
+    
+    
     HWND hwnd = GetHWnd();
-
 
     ::SetWindowLong(hwnd, GWL_STYLE, GetWindowLong(hwnd, GWL_STYLE) & (~(WS_CAPTION | WS_SYSMENU | WS_SIZEBOX)));
     ::SetWindowLong(hwnd, GWL_EXSTYLE, GetWindowLong(hwnd, GWL_EXSTYLE) & (~(WS_EX_WINDOWEDGE | WS_EX_DLGMODALFRAME)) | WS_EX_LAYERED | WS_EX_TOOLWINDOW);
@@ -70,7 +75,7 @@ int main()
     line(0, WindHeight - 1, WindWidth, WindHeight - 1);
 
     RECT textPos = {0, 0, 0, 0};
-    settextstyle(64, 0, _T("Consolas"));
+    settextstyle(64, 0, _T("Console"));
 
     //drawtext(_T(TempChar), &textPos, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
     while (true) {
@@ -78,10 +83,10 @@ int main()
         //printf("%s\n", NowTime);
         outtextxy(getwidth() / 20, 5, NowTime);
         //outtextxy(getwidth() * 0.35, 5, NowTime);
-        Sleep(100);
+        Sleep(10);
     }
 
     system("pause");
     closegraph();
-
+    return 0;
 }

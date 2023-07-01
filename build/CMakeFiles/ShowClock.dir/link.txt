@@ -1,0 +1,3 @@
+D:\Programs\CMake\bin\cmake.exe -E rm -f CMakeFiles\ShowClock.dir/objects.a
+D:\Programs\MinGW\bin\ar.exe qc CMakeFiles\ShowClock.dir/objects.a @CMakeFiles\ShowClock.dir\objects1.rsp
+D:\Programs\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\ShowClock.dir/objects.a -Wl,--no-whole-archive -o ShowClock.exe -Wl,--out-implib,libShowClock.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ShowClock.dir\linkLibs.rsp

@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/ConBl/Desktop/ShowClock/build",
+  "command": "D:\\Programs\\MinGW\\bin\\g++.exe  @CMakeFiles/ShowClock.dir/includes_CXX.rsp -g -std=gnu++14 -o CMakeFiles\\ShowClock.dir\\Main.cpp.obj -c C:\\Users\\ConBl\\Desktop\\ShowClock\\Main.cpp",
+  "file": "C:/Users/ConBl/Desktop/ShowClock/Main.cpp",
+  "output": "CMakeFiles/ShowClock.dir/Main.cpp.obj"
+}
+]
