@@ -15,6 +15,8 @@
 
 <hr>
 
+## 这个账号下的所有仓库都不会维护了
+
 ## Install
 
 点击右侧(或下方)的 [Release](https://github.com/BuDingOwO/ShowClock/releases/tag/Release) 下载最新的发行版即可
@@ -25,9 +27,8 @@
 
 ## Note
 
-编译工具: CMAKE
 IDE: VSC
-需要自己准备 MinGW, Ninja, CMAKE
+工具链: CMake Ninja MinGW
 
 ## Bugs 
 
